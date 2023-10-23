@@ -167,4 +167,8 @@
     position: relative;
    
   }
+  .payContainer span{
+    margin-bottom: 2rem;
+  }
+  
 }
