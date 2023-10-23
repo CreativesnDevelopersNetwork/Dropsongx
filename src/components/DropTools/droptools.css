@@ -1,0 +1,91 @@
+.offers{
+    background-color: var(--darkBlue);
+    font-family: 'Epilogue', sans-serif;
+    padding: 2rem 2px;
+}
+
+.offers .offerInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.capitalD{
+    color: teal;
+    font-size: 4rem;
+    font-weight: bolder;
+    font-family: "Herr Von Muellerhoff", cursive;
+    margin: 0px 4px;
+}
+
+.offers .offerInfo h1{
+   color: var(--whiteColor);
+   font-size: 2rem;
+}
+
+.offers .offerInfo p, h4{
+    color: var(--whiteColor);
+}
+
+.offerCard{
+    margin-top: 3rem;
+    padding: 4px 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dataCard{
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.384);
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 1rem 0.8rem;
+}
+
+.offerImage{
+    height: 200px;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.offerImage img{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    border-radius: 7px;
+}
+
+.offerImage:hover img{
+    transform: scale(1.3);
+}
+
+.dataCard h4{
+    font-size: 1.3rem;
+    padding: 0.9rem 0 0.2rem 0;
+}
+
+
+@media screen and (max-width: 850px){
+    .offers{
+        margin: 0;
+    }
+
+    .offerCard{
+        flex-direction: column;
+    }
+
+    .dataCard{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .offers h1{
+        
+        font-size: 1.8rem;
+     }
+}

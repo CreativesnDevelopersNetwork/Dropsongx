@@ -1,0 +1,84 @@
+.homeHero{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 85vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.otherHeroes{
+    width: 100%;
+    height: 76vh;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.heroText{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.subHeading{
+    color: teal;
+}
+.heroText h1{
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-weight: 800;
+    background-color: rgb(3,27,52);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    width: 70%;
+    text-align: center;
+}
+
+.heroText p{
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    color: var(--colorWhite);
+    text-align: center;
+    padding: 0.2rem 0 1.5rem 0;
+    width: 70%;
+}
+
+.heroText .homeBtn{
+    text-decoration: none;
+    background: coral;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--colorWhite);
+}
+
+@media screen and (max-width: 550px){
+    .heroText h1{
+        padding: 10px 20px;
+        font-size: 1.6rem;
+    }
+
+    .heroText p{
+        font-size: 1.1rem;
+        padding: 0 0 2rem 0;
+    }
+}

@@ -1,0 +1,242 @@
+.formBody{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(18, 18, 18);
+}
+
+form{
+    width: 400px;
+}
+
+.submitButton a, #applicationFormBtn a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    height: 80px;
+    display: block;
+    margin: 0 auto 50px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"]{
+    display: block;
+    width: 300px;
+    height: 40px;
+    padding: 5px 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    background: #fff;
+    border: none;
+    outline: none;
+    color: #383838;
+    font-size: 16px;
+    box-shadow: 04px 10px rgba(0,0,0,0.04);
+}
+
+textarea{
+    display: block;
+    width: 300px;
+    height: 40px;
+    padding: 5px 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    background: #fff;
+    border: none;
+    outline: none;
+    color: #383838;
+    font-size: 16px;
+    box-shadow: 04px 10px rgba(0,0,0,0.04);
+}
+
+::placeholder{
+    color: #383838;
+}
+
+.submitButton{
+    min-width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: rgb(97,167,52);
+    color: #fff;
+    border-radius: 2px;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 30px 0;
+    font-size: larger;
+}
+
+.checkBox{
+    /* -webkit-appearance: none; */
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    background: #fff;
+    border: 1px solid #383838;
+    cursor: pointer;
+}
+
+.checkBox:checked{
+    background: #383838;
+}
+
+.checkBox::after{
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: 100%;
+    pointer-events: none;
+    /* background-image: url(""); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.checkBox:checked::after{
+    display: block;
+}
+
+label{
+    text-transform: capitalize;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #383838;
+}
+
+label a{
+    color: #383838;
+}
+
+.loginLink{
+  color: #383838;
+  text-transform: capitalize;
+  text-align: center;
+  display: block;
+  font-weight: none;
+  text-decoration: none;
+}
+
+.alertArea{
+    width: 300px;
+    min-height: 150px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 100px rgba(0,0,0,0.04);
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    transition: 1s;
+}
+
+.show{
+    opacity: 1;
+    pointer-events: all;
+    top: 52%;
+}
+
+.errorIcon{
+    display: block;
+    margin: 10px auto 20px;
+    height: 60px;
+}
+
+.errorText{
+  color: #e24c4b;
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+
+.sellerUser{
+    border-radius: 10px;
+    background: #fff;
+    padding: 30px;
+    width: 80%;
+}
+
+.sellerHeading{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.sellDescription{
+    margin: 20px 0;
+    text-transform: capitalize;
+    line-height: 45px;
+    font-size: 18.5px;
+}
+
+
+.backtohome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.hide{
+    display: none;
+}
+
+.applicationForm{
+    width: 80%;
+}
+
+.applicationForm input, textarea{
+  font-weight: 500;
+}
+
+.applicationForm input:not(input[type="checkbox"]){
+    width: 100%;
+}
+
+.applicationForm textarea{
+    width: 100%;
+    height: 90px;
+    resize: none;
+    padding: 10px 20px;
+}
+
+#applicationFormBtn{
+   width: 100px;
+   min-width: 100px;
+   height: 40px;
+   text-align: center;
+   line-height: 40px;
+   background: rgb(97,167,52);
+   color: #fff;
+   border-radius: 2px;
+   text-transform: capitalize;
+   border: none;
+   cursor: pointer;
+   display: block;
+   font-size: larger;
+   margin-bottom: 2rem;
+}
+
+#addBusiness{
+    margin-bottom: 1rem;
+}
