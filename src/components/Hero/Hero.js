@@ -11,8 +11,8 @@ function Hero(props) {
         </video>
 
         <div className={props.textClass}>
-        <h2 class="subHeading">
-              <span class="capitalD"><i>D</i></span><i>ROPSONGX</i> TOOLS
+        <h2 className="subHeading">
+              <span className="capitalD"><i>D</i></span><i>ROPSONGX</i> TOOLS
             </h2>
           <h1>{props.title}</h1>
           <p>{props.text}</p>
