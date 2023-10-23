@@ -8,7 +8,7 @@ const Pricing = () => {
         <h2 className="subHeading">
               <span className="capitalD"><i>D</i></span><i>ROPSONGX</i> TOOLS
             </h2>
-           <span>Flexible Pricing Plans for Music Distribution.</span>
+           <span>Our flexible Pricing Plans for Music Distribution.</span>
           <div className="panel pricing-table">
             
             <div className="pricing-plan">
