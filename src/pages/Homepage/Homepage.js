@@ -3,7 +3,6 @@ import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import { Card, Button, Alert } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
-import "./homepage.css"
 import Hero from "../../components/Hero/Hero"
 import Footer from "../../components/Footer/Footer"
 import AddFarmer from "../../components/AddFarmer/AddFarmer"
@@ -42,9 +41,10 @@ export default function Homepage() {
         textClass="heroText"
         videoSource={coverVid}
         title="DISTRIBUTE AND PROMOTE YOUR MUSIC TO OVER 350 DJ’S ACROSS AFRICA"
-        text="Discover innovative to build your audience at any stage.."
+        text="Discover innovative ways to build your audience at any stage.."
         btnText="Get Access"
         btnClass="homeBtn"
+        joinBtnClass="joinBtn"
         url="/login"
       />
       <Features/>
