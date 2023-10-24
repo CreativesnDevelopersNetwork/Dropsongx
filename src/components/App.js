@@ -8,10 +8,12 @@ import Login from "../components/Login/Login";
 import ForgotPassword from "./ForgotPassword";
 import UpdateProfile from "../components/UpdateProfile/UpdateProfile";
 import Pricing from "./Pricing/Pricing";
+import { ChakraProvider } from '@chakra-ui/react'
 
 function App() {
   return (
-        <Router>
+        <ChakraProvider>
+          <Router>
           <AuthProvider>
             <Routes>
               <Route path="/signup" element={<Signup />} />
@@ -25,6 +27,7 @@ function App() {
             </Routes>
           </AuthProvider>
         </Router>
+        </ChakraProvider>
   );
 }
 

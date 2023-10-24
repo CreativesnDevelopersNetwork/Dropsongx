@@ -5,6 +5,8 @@
 
 .mainSection h1{
     font: 3rem;
+    color: teal;
+    font-weight: 700;
 }
 
 .firstFeature{
@@ -61,13 +63,11 @@
 
 .featBtn{
     text-decoration: none;
-    background: var(--mainRed);
+    background: coral;
     padding: 0.6rem 1rem;
     border-radius: 6px;
     font-size: 1.1rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: var(--whiteColor);
+    color: white;
     margin-top: 15px;
 }
 

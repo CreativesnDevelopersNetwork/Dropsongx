@@ -18,18 +18,18 @@ function WeOffer(){
             <div className="offerCard">
                 <OffersData
                 image={offImg1}
-                heading="Brand Identity"
-                description="Make your Brand recognisable, differentiated and appealing to the target audience with styles to tone your voice."
+                heading="Detailed Analytics"
+                description=" Dive into the heart of your music's performance with access to in-depth analytics and comprehensive reporting, empowering you to make informed decisions."
                 />
                 <OffersData
                 image={offImg2}
-                heading="Personal Branding"
-                description="Build yourself and reflect your values to attract the right responses from your audience."
+                heading="User-Friendly Interface"
+                description="Manage your music and monitor performance effortlessly with our intuitive, user-friendly dashboard. Streamline your music distribution journey with ease."
                 />
                 <OffersData
                 image={offImg3}
-                heading="Media Buy"
-                description="Reach your audience in the right places at the right frequency at the right price. From Traditional media to digital media or an integrated mix."
+                heading="Support for Cover Songs"
+                description="Legally distribute your cover songs with confidence. Our service provides the necessary support to ensure your cover songs meet all legal requirements."
                 />
                            
             </div>
@@ -37,8 +37,8 @@ function WeOffer(){
                
                 <OffersData
                 image={offImg4}
-                heading="General Marketing Support"
-                description="Outsource all your marketing challenges and pains to us to assist you with, From Brand, Customer value management to customer response management."
+                heading="Customization"
+                description="Tailor your artist profile and branding to reflect your unique style. Leave a lasting impression and engage your audience with a personalized touch."
                 />                
                 <OffersData
                 image={offImg5}

@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-import { Card, Alert } from "react-bootstrap";
+import React from "react";
 import { useAuth } from "../contexts/AuthContext";
-import { Link } from "react-router-dom";
 import Hero from "../components/Hero/Hero"
 import Footer from "../components/Footer/Footer"
 import HomeNav from "../components/HomeNav/HomeNav";
@@ -10,14 +8,11 @@ import MoreFeatures from "../components/MoreFeatures/MoreFeatures";
 import Features from "../components/Features/Features";
 import WeOffer from "../components/DropTools/DropTools";
 import MainNav from "../components/MainNav/MainNav";
+import MiniNav from "../components/MainNav/MiniNav";
 
 
 export default function Homepage() {
-  const [error, setError] = useState("");
   const { currentUser } = useAuth();
-
-
-
   // Check if the user is not authenticated
   if (!currentUser) {
     return (
@@ -48,20 +43,8 @@ export default function Homepage() {
   return (
     <>
     {/* navbar */}
-    <MainNav/>
-    {/* profile card */}
-     <div className="cardBox">
-     <Card className="profileCard">
-        <div>
-          <h2 className="text-center mb-4">Profile</h2>
-          {error && <Alert variant="danger">{error}</Alert>}
-          <strong>Email:</strong> {currentUser.email}
-          <Link to="/update-profile" className="btn btn-primary w-100 mt-3">
-            Update Profile
-          </Link>
-        </div>
-      </Card>
-     </div>     
+     <MainNav/>
+     <MiniNav/>     
      <WeOffer/>
      <Footer/>
     </>

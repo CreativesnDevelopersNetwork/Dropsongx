@@ -1,27 +1,12 @@
 import "./nav.css";
 import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import { Button } from "react-bootstrap";
-import { useAuth } from "../../contexts/AuthContext";
-import { useNavigate } from "react-router-dom";
-import logo from "../../assets/dropsongs.jpg"
+import logo from "../../assets/dropsongs.jpg";
+import UserDrawer from "../UserDrawer/UserDrawer";
 
 
 const MainNav = () => {  
-    const [toggleMenu, setToggleMenu] = useState(false);
-    const { currentUser, logout } = useAuth();
-    const [error, setError] = useState("");
-    const navigate = useNavigate();
-    async function handleLogout() {
-      setError("");
-  
-      try {
-        await logout();
-        navigate.push("/login");
-      } catch {
-        setError("Failed to log out");
-      }
-    }
+    const [toggleMenu, setToggleMenu] = useState(false);    
     return(
         <div className="mediaNavbar">
         <div className="mediaNavbar-links">
@@ -38,10 +23,7 @@ const MainNav = () => {
         </div>
         <div className="mediaNavbar-sign">
          <span >
-         <strong>Email:</strong> {currentUser.email}
-         <Button onClick={handleLogout}>
-            Log Out
-          </Button>
+          <UserDrawer/>
          </span>
         </div>
         <div className="mediaNavbar-menu">
@@ -58,9 +40,7 @@ const MainNav = () => {
             <p><a href="/contactus">Contact Us</a></p>
             </div>
             <div className="mediaNavbar-menu_container-links-sign">
-             <Button onClick={handleLogout}>
-             Log Out
-            </Button>
+            <UserDrawer/>
             </div>
           </div>
           )}
