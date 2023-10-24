@@ -21,8 +21,9 @@
 }
 
 .offers .offerInfo h1{
-   color: var(--whiteColor);
+   color: rgba(27, 21, 49, 0.882);
    font-size: 2rem;
+   
 }
 
 .offers .offerInfo p, h4{
@@ -65,6 +66,8 @@
 .dataCard h4{
     font-size: 1.3rem;
     padding: 0.9rem 0 0.2rem 0;
+    font-weight: 400;
+    color: teal;
 }
 
 
