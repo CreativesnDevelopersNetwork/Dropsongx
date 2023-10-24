@@ -3,7 +3,7 @@ import Signup from "../components/SignUp/Signup";
 import ContactUs from "./ContactUs/ContactUs";
 import { AuthProvider } from "../contexts/AuthContext";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Homepage from "../pages/Homepage/Homepage";
+import Homepage from "../pages/Homepage";
 import Login from "../components/Login/Login";
 import ForgotPassword from "./ForgotPassword";
 import UpdateProfile from "../components/UpdateProfile/UpdateProfile";

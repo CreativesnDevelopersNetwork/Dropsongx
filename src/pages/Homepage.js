@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import { Card, Button, Alert } from "react-bootstrap";
-import { useAuth } from "../../contexts/AuthContext";
+import { useAuth } from "../contexts/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
-import Hero from "../../components/Hero/Hero"
-import Footer from "../../components/Footer/Footer"
-import AddFarmer from "../../components/AddFarmer/AddFarmer"
-import HomeNav from "../../components/HomeNav/HomeNav";
-import coverVid from "../../assets/cover1.mp4"
-import MoreFeatures from "../../components/MoreFeatures/MoreFeatures";
-import Features from "../../components/Features/Features";
-import WeOffer from "../../components/DropTools/DropTools";
+import Hero from "../components/Hero/Hero"
+import Footer from "../components/Footer/Footer"
+import AddFarmer from "../components/AddFarmer/AddFarmer"
+import HomeNav from "../components/HomeNav/HomeNav";
+import coverVid from "../assets/cover1.mp4"
+import MoreFeatures from "../components/MoreFeatures/MoreFeatures";
+import Features from "../components/Features/Features";
+import WeOffer from "../components/DropTools/DropTools";
 
 
 export default function Homepage() {
