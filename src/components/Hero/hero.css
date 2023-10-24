@@ -60,6 +60,13 @@ img{
     width: 70%;
 }
 
+.heroButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .heroText .homeBtn{
     text-decoration: none;
     background: coral;
@@ -69,6 +76,19 @@ img{
     font-weight: bold;
     letter-spacing: 2px;
     color: var(--colorWhite);
+    margin-right: 1rem;
+}
+
+.heroText .joinBtn{
+    text-decoration: none;
+    background: rgb(31, 16, 69);
+    padding: 1rem 1.4rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--colorWhite);
+    margin-left: 1rem;
 }
 
 @media screen and (max-width: 550px){

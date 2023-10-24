@@ -43,9 +43,11 @@ export default function Homepage() {
         title="DISTRIBUTE AND PROMOTE YOUR MUSIC TO OVER 350 DJ’S ACROSS AFRICA"
         text="Discover innovative ways to build your audience at any stage.."
         btnText="Get Access"
+        joinBtnText="Join as Artist(e)"
         btnClass="homeBtn"
         joinBtnClass="joinBtn"
         url="/login"
+        joinUrl="/"
       />
       <Features/>
       <MoreFeatures/>

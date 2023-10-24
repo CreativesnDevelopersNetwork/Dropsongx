@@ -16,12 +16,12 @@ function Hero(props) {
             </h2>
           <h1>{props.title}</h1>
           <p>{props.text}</p>
-          <span>
+          <span className="heroButtons">
           <a href={props.url} className={props.btnClass}>
             {props.btnText}
           </a>
-          <a href={props.url} className={props.joinBtnClass}>
-            {props.btnText}
+          <a href={props.joinUrl} className={props.joinBtnClass}>
+            {props.joinBtnText}
           </a>
           </span>
         </div>
