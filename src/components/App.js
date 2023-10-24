@@ -9,6 +9,7 @@ import ForgotPassword from "./ForgotPassword";
 import UpdateProfile from "../components/UpdateProfile/UpdateProfile";
 import Pricing from "./Pricing/Pricing";
 import { ChakraProvider } from '@chakra-ui/react'
+import JoinAs from "./JoinAs/JoinAs";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
               <Route path="/signup" element={<Signup />} />
               <Route path="/login" element={<Login />} />
               <Route path="/pricing" element={<Pricing />} />
+              <Route path="/joinas" element={<JoinAs />} />
               <Route path="/contactus" element={<ContactUs />} />
               <Route path="/forgot-password" element={<ForgotPassword />} />
               {/* Protected routes */}

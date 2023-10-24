@@ -28,7 +28,7 @@ const HomeNav = () => {
           </Link>
          </span>
          <span >
-         <Link className="signIn" to="/signup" >
+         <Link className="signIn" to="/joinas" >
              Get Access 
           </Link>
          </span>
