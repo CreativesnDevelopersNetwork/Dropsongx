@@ -5,7 +5,6 @@ import { Button } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
 import logo from "../../assets/dropsongs.jpg"
-import { MDBDropdown, MDBDropdownMenu, MDBDropdownToggle, MDBDropdownItem } from 'mdb-react-ui-kit';
 
 
 const MainNav = () => {  
@@ -39,14 +38,6 @@ const MainNav = () => {
         </div>
         <div className="mediaNavbar-sign">
          <span >
-         <MDBDropdown group className='shadow-0'>
-        <MDBDropdownToggle color='link'>Action</MDBDropdownToggle>
-        <MDBDropdownMenu>
-          <MDBDropdownItem link>Action</MDBDropdownItem>
-          <MDBDropdownItem link>Another action</MDBDropdownItem>
-          <MDBDropdownItem link>Something else here</MDBDropdownItem>
-        </MDBDropdownMenu>
-      </MDBDropdown>
          <strong>Email:</strong> {currentUser.email}
          <Button onClick={handleLogout}>
             Log Out
