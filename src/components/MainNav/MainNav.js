@@ -1,12 +1,28 @@
 import "./nav.css";
 import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
+import { useAuth } from "../../contexts/AuthContext";
+import { useNavigate } from "react-router-dom";
 import logo from "../../assets/dropsongs.jpg"
+import { MDBDropdown, MDBDropdownMenu, MDBDropdownToggle, MDBDropdownItem } from 'mdb-react-ui-kit';
 
 
-const HomeNav = () => {  
+const MainNav = () => {  
     const [toggleMenu, setToggleMenu] = useState(false);
+    const { currentUser, logout } = useAuth();
+    const [error, setError] = useState("");
+    const navigate = useNavigate();
+    async function handleLogout() {
+      setError("");
+  
+      try {
+        await logout();
+        navigate.push("/login");
+      } catch {
+        setError("Failed to log out");
+      }
+    }
     return(
         <div className="mediaNavbar">
         <div className="mediaNavbar-links">
@@ -23,14 +39,18 @@ const HomeNav = () => {
         </div>
         <div className="mediaNavbar-sign">
          <span >
-         <Link className="signIn" to="/login" >
-            Log In
-          </Link>
-         </span>
-         <span >
-         <Link className="signIn" to="/signup" >
-             Get Access 
-          </Link>
+         <MDBDropdown group className='shadow-0'>
+        <MDBDropdownToggle color='link'>Action</MDBDropdownToggle>
+        <MDBDropdownMenu>
+          <MDBDropdownItem link>Action</MDBDropdownItem>
+          <MDBDropdownItem link>Another action</MDBDropdownItem>
+          <MDBDropdownItem link>Something else here</MDBDropdownItem>
+        </MDBDropdownMenu>
+      </MDBDropdown>
+         <strong>Email:</strong> {currentUser.email}
+         <Button onClick={handleLogout}>
+            Log Out
+          </Button>
          </span>
         </div>
         <div className="mediaNavbar-menu">
@@ -47,12 +67,9 @@ const HomeNav = () => {
             <p><a href="/contactus">Contact Us</a></p>
             </div>
             <div className="mediaNavbar-menu_container-links-sign">
-              <Link to="/login" className="signIn">
-               Log In
-               </Link>
-               <Link to="/signup" className="signup">
-               Get Access
-               </Link>
+             <Button onClick={handleLogout}>
+             Log Out
+            </Button>
             </div>
           </div>
           )}
@@ -62,4 +79,4 @@ const HomeNav = () => {
 }
 
 
-export default HomeNav;
+export default MainNav;
