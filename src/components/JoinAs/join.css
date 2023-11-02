@@ -1,9 +1,12 @@
  
   .hero-section{
     align-items: center;
-  
+  background-color: rgb(211, 211, 211);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
     display: flex;
-    min-height: 100%;
+    min-height: 100vh;
     justify-content: center;
     
   }
@@ -74,7 +77,7 @@
   
   .card__content{
     left: 0;
-    padding: var(--spacing-l);
+    padding: 2.1rem;
     position: absolute;
     top: 0;
     display: flex;
@@ -93,7 +96,7 @@
   }
   
   .card__heading{
-    color: var(--text-lighter);
+    color: coral;
     font-size: 3.5rem;
     text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
     line-height: 1.4;
