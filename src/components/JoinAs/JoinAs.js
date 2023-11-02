@@ -13,7 +13,7 @@ const JoinAs = () => {
           </div>
         </a>
 
-        <a className="card" href="https://droplix-first.netlify.app/">
+        <a className="card" target="_blank" href="https://droplix-first.netlify.app/" rel="noreferrer">
   <div className="card__background" style={{ backgroundImage: `url('./src/media/djCover.jpg')` }}></div>
   <div className="card__content">
     <p className="card__category">Get Access as a:</p>
